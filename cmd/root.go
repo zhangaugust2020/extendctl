@@ -24,7 +24,6 @@ var Kubeconfig, Namespace string
 func init() {
 	//利用主体变量去全局接收 携带的kubeconfig配置
 	rootCmd.PersistentFlags().StringVar(&Kubeconfig, "kubeconfig", "", "$HOME/.kube/config")
-
 }
 
 // Initnode 接收上面获取参数的Kubeconfig变量，去判断是否有效

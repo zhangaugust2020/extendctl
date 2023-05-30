@@ -38,7 +38,7 @@ func findDeploy(cmd *cobra.Command, args []string) {
 
 	arr := strings.Split(args[0], "-")
 
-	//抄作业
+	//获取deployment列表
 	deploys := deploy.Items
 
 	for _, dep := range deploys {
