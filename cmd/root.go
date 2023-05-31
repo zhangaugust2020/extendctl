@@ -62,6 +62,6 @@ func Initnode() string {
 }
 
 func Execute() {
-	rootCmd.PersistentFlags().StringVarP(&Namespace, "namespace", "n", "default", "choose namespace")
+	rootCmd.PersistentFlags().StringVarP(&Namespace, "namespace", "n", "default", "选择 namespace")
 	cobra.CheckErr(rootCmd.Execute()) //入口
 }
