@@ -14,12 +14,12 @@ import (
 var versionCmd = &cobra.Command{
 	Use:   "version",
 	Args:  cobra.ExactArgs(1),
-	Short: "A brief description of your command",
-	Long:  ``,
+	Short: "查看Deployment部署的版本",
+	Long:  `查看Deployment部署的版本`,
 	Run:   version,
 }
 
-// 获取集群node信息函数
+// version 获取集群Deployment信息函数，并展示版本号
 func version(cmd *cobra.Command, args []string) {
 
 	//前面链接的语法是相同的，后面可以把这些放在一个函数中

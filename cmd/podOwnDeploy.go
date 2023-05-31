@@ -15,12 +15,12 @@ import (
 var podOwnDeployCmd = &cobra.Command{
 	Use:   "podOwnDeploy",
 	Args:  cobra.ExactArgs(1),
-	Short: "A brief description of your command",
-	Long:  ``,
+	Short: "查询启动的Pod属于那个Deployment",
+	Long:  `查询启动的Pod属于那个Deployment`,
 	Run:   findDeploy,
 }
 
-// 获取集群node信息函数
+// findDeploy 获取集群Deployment信息函数
 func findDeploy(cmd *cobra.Command, args []string) {
 
 	//前面链接的语法是相同的，后面可以把这些放在一个函数中

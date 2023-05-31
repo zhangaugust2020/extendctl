@@ -13,12 +13,12 @@ import (
 // podCmd represents the pod command
 var podCmd = &cobra.Command{
 	Use:   "pod",
-	Short: "",
-	Long:  ``,
+	Short: "与get命令一起使用，获取k8s上的pod信息",
+	Long:  `与get命令一起使用，获取k8s上的pod信息`,
 	Run:   connectPod,
 }
 
-// 获取集群node信息函数
+// connectPod 获取集群pod信息函数
 func connectPod(cmd *cobra.Command, args []string) {
 
 	//前面链接的语法是相同的，后面可以把这些放在一个函数中

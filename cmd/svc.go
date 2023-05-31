@@ -12,8 +12,8 @@ import (
 
 var svcCmd = &cobra.Command{
 	Use:   "svc",
-	Short: "",
-	Long:  ``,
+	Short: "与get命令一起使用，获取k8s上的svc信息",
+	Long:  `与get命令一起使用，获取k8s上的svc信息`,
 	Run:   connectSvc,
 }
 
@@ -21,7 +21,7 @@ func init() {
 	getCmd.AddCommand(svcCmd)
 }
 
-// 定义svc查询
+// connectSvc 定义svc查询
 func connectSvc(cmd *cobra.Command, args []string) {
 
 	//前面链接的语法是相同的，后面可以把这些放在一个函数中

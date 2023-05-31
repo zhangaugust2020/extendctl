@@ -12,13 +12,13 @@ import (
 
 var nodeCmd = &cobra.Command{
 	Use:   "node",
-	Short: "",
-	Long:  ``,
-	Run:   connectnode, //当访问node资源时，直接调用connectnode函数即可
+	Short: "与get命令一起使用，获取k8s上的node信息",
+	Long:  `与get命令一起使用，获取k8s上的node信息`,
+	Run:   connectNode, //当访问node资源时，直接调用connectNode函数即可
 }
 
-// 获取集群node信息函数
-func connectnode(cmd *cobra.Command, args []string) {
+// connectNode 获取集群node信息函数
+func connectNode(cmd *cobra.Command, args []string) {
 
 	kubeconfig := Initnode()
 	var Kconfig *string

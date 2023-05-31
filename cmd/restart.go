@@ -18,12 +18,12 @@ import (
 var restartCmd = &cobra.Command{
 	Use:   "restart",
 	Args:  cobra.ExactArgs(1),
-	Short: "A brief description of your command",
-	Long:  ``,
+	Short: "重启Deployment部署的Pod",
+	Long:  `重启Deployment部署的Pod`,
 	Run:   restart,
 }
 
-// 获取集群node信息函数
+// restart 获取集群Deployment信息函数重启Pod
 func restart(cmd *cobra.Command, args []string) {
 
 	//前面链接的语法是相同的，后面可以把这些放在一个函数中

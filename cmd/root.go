@@ -11,8 +11,8 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "extendctl",
 	Args:  cobra.MinimumNArgs(1), //防止用户只使用kubectl命令导致卡死，这里设置必须要设置一个参数才可使用
-	Short: "",
-	Long:  ``,
+	Short: "extendctl命令本体",
+	Long:  `extendctl命令本体`,
 	Run: func(cmd *cobra.Command, args []string) {
 
 	},
