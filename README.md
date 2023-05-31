@@ -7,5 +7,5 @@ SET GOOS=linux
 SET GOARCH=amd64
  
 #打包
-go build -o kubectl .
+go build -o extendctl .
 ```

@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 )
 
-// 定义一下主体命令变量
+// rootCmd 定义一下主体命令变量
 var rootCmd = &cobra.Command{
-	Use:   "kubectl",
+	Use:   "extendctl",
 	Args:  cobra.MinimumNArgs(1), //防止用户只使用kubectl命令导致卡死，这里设置必须要设置一个参数才可使用
 	Short: "",
 	Long:  ``,
